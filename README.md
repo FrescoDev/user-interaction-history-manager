@@ -1,11 +1,17 @@
 # user-interaction-history-manager
 
-This service is responsible for SERVICE_PURPOSE. 
+The UIHM API is responsible for providing a non-contextual, historic, bidirectional, user-to-system interaction data trail. This data is exposed through a simple RESTful API providing simple a querying mechanism exposed through URL parameters.
 
-DEV URL: [tbd]
-LIVE URL: [tbd]
+[Apiary documentation](http://docs.userinteractionhistorymanagerapi.apiary.io/#)
 
-[![Build Status](url)](url)
+* DEV URL: [https://d-interaction-hist-mgr.herokuapp.com/]
+* LIVE URL: [https://interaction-hist-mgr.herokuapp.com/]
+* DEV FB PAGE: [https://www.facebook.com/NioBi-Development-414974712209773/]
+* LIVE FB PAGE: [https://www.facebook.com/NioBiChat/]
+
+
+[![Build Status](https://travis-ci.org/FrescoDev/user-interaction-history-manager.svg?branch=master)](https://travis-ci.org/FrescoDev/user-interaction-history-manager.)
+
 
 ### Prerequisities
 
@@ -63,3 +69,7 @@ Response body:
         "description": "user-interaction-history-manager",
         "status": "ok"
     }
+
+## System interaction diagram
+
+![diagram](http://i.imgur.com/qQax3qW.png)
