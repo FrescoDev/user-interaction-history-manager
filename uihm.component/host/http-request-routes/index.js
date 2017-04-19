@@ -1,4 +1,4 @@
-import InboxHandler from '../http-request-handlers/inbox.handler.js'
+import InboxHandler from '../http-request-handlers/inbox.handler'
 import MetaHandler from '../http-request-handlers/meta.handler'
 import { Router } from 'express'
 
