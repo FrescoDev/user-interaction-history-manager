@@ -1,6 +1,6 @@
 import * as chai from 'chai';
 
-import server from '../test-helpers/server.mock';
+import server from '../../harness-setup/testing.server';
 
 const expect = chai.expect;
 
