@@ -30,16 +30,15 @@
     "errorhandler": "1.5.0",
     "es6-promise": "4.1.0",
     "es6-promisify": "5.0.0",
-    "fresco-http-service-utilities": "^1.0.2",
+    "fresco-http-service-utilities": "1.0.2",
     "express": "4.15.2",
     "helmet": "3.5.0",
     "lodash": "4.17.4",
     "method-override": "2.3.8",
-    "mongodb": "2.2.25",
     "morgan": "1.8.1",
     "nodemon": "1.11.0",
-    "redis": "^2.6.5",
-    "redis-mock": "^0.16.0"
+    "redis": "2.7.1",
+    "redis-mock": "0.16.0"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",
