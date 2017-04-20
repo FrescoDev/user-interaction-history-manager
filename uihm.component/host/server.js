@@ -1,4 +1,5 @@
 import bodyParser from 'body-parser';
+import cache from '../cache';
 import cors from 'cors';
 import errorHandler from 'errorhandler';
 import express from 'express';
@@ -9,6 +10,18 @@ import routes from './http-request-routes';
 import settings from '../configuration';
 
 let app = express();
+
+// Test to check cache works as expected
+cache.set('TestKey', '    TestValue successfuly set & retrieved from cache\n')
+cache.get('TestKey', function (err, reply) {
+  // eslint-disable-next-line no-console  
+  console.log(reply)
+})
+
+cache.del('TestKey', function (err, reply) {
+  // eslint-disable-next-line no-console    
+  // console.log(reply)
+});
 
 // Adds some security best practices
 app.use(helmet());

@@ -37,7 +37,9 @@
     "method-override": "2.3.8",
     "mongodb": "2.2.25",
     "morgan": "1.8.1",
-    "nodemon": "1.11.0"
+    "nodemon": "1.11.0",
+    "redis": "^2.6.5",
+    "redis-mock": "^0.16.0"
   },
   "devDependencies": {
     "babel-cli": "6.24.0",
