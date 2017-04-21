@@ -6,7 +6,7 @@ import express from 'express';
 import helmet from 'helmet';
 import methodOverride from 'method-override';
 import morgan from 'morgan';
-import routes from './http.request.routes';
+import routes from './http.request.handling/routes';
 import settings from '../configuration';
 
 let app = express();
