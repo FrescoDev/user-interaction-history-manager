@@ -1,5 +1,5 @@
 import BaseHandler from 'fresco-http-service-utilities';
-import DataFetchingModule from '../../../core/data.fetching';
+import DataFetchingModule from '../../../../core/data.fetching';
 
 class GetThreadHandler extends BaseHandler {
     handle(req, res) {
