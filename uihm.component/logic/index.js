@@ -1,9 +1,7 @@
-// Define service worker here. 
-
-class Worker {
-  work (req) {
-    return 'work complete'
-  }
+class DataFetchingModule {
+    fetch(queryParameters) {
+        return 'interaction thread data'
+    }
 }
 
-export default Worker
+export default DataFetchingModule
