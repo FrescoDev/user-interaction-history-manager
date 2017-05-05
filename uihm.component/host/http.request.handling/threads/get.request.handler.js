@@ -2,13 +2,22 @@ import BaseHandler from 'fresco-http-service-utilities';
 import DataFetchingModule from '../../../core/data.fetching';
 
 class GetThreadHandler extends BaseHandler {
-    handle(req, res) {
-        let dataFetchingModule = new DataFetchingModule();
-        let data = dataFetchingModule.fetch();
+    async handle(req, res) {
 
-        res.json({
-            'thread': data
-        })
+        const parameters = {
+            userId: req.params.userId || 'both',
+            threadSize: req.query.size || 'max',
+            threadInteractorId: req.query.interactor || 'all'
+        };
+
+        const dataFetchingModule = new DataFetchingModule(parameters);
+
+        try {
+            const data = await dataFetchingModule.fetchAsync();
+            res.json({'data': data})
+        } catch (error) {
+            console.log(error);
+        }
     }
 }
 

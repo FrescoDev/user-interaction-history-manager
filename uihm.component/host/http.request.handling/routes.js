@@ -5,6 +5,6 @@ import { Router } from 'express'
 const routes = new Router()
 
 routes.get('/meta', GetMetaHandler.handle)
-routes.get('/thread', GetThreadHandler.handle)
+routes.get('/thread/:userId/', GetThreadHandler.handle)
 
 export default routes
