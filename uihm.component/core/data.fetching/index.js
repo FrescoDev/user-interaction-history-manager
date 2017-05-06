@@ -1,4 +1,4 @@
-require('babel-polyfill');
+import "babel-polyfill";
 import cache from '../../cache/'
 import { mockThread } from './mock.data'
 
