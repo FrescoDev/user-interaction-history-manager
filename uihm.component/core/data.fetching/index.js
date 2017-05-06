@@ -1,12 +1,15 @@
 import "babel-polyfill";
 import cache from '../../cache/'
-import { mockThread } from './mock.data'
+import {mockThread} from './mock.data'
+import settings from '../../configuration'
 
 class DataFetchingModule {
     constructor(parameters) {
         this._queryParams = parameters
         this._mockData = JSON.stringify(mockThread)
-        cache.set(this._queryParams.userId, this._mockData)
+        if (!settings.env) {
+            cache.set(this._queryParams.userId, this._mockData)
+        }
     }
 
     async fetchAsync() {
